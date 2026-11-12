@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Privacy Policy for the Sticky Blast Android game by SIR.">
+  <link rel="canonical" href="https://sirgame-studio.github.io/sticky-blast-privacy/">
+  <title>Sticky Blast Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f3ff;
+      --card: #ffffff;
+      --text: #241d47;
+      --muted: #5d5788;
+      --accent: #7a3cd8;
+      --line: #e6dcfb;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #160f33; --card: #22184a; --text: #f1edff; --muted: #c2b8ea; --accent: #c7a4ff; --line: #3a2d70; }
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--text); line-height: 1.65; }
+    main { width: min(820px, 100%); margin: 0 auto; padding: 40px 20px 72px; }
+    header { background: linear-gradient(120deg, #5b4bff, #ff3db4); color: #fff; border-radius: 20px; padding: 28px; }
+    header h1 { margin: 0 0 6px; font-size: clamp(1.8rem, 5vw, 2.6rem); line-height: 1.15; }
+    header p { margin: 0; opacity: .92; color: #fff; }
+    section { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 4px 22px 14px; margin-top: 18px; }
+    h2 { font-size: 1.2rem; margin: 18px 0 6px; color: var(--accent); }
+    p, li { color: var(--text); }
+    header p { color: #fff; }
+    .muted { color: var(--muted); }
+    a { color: var(--accent); }
+    code { font-size: .95em; }
+    table { width: 100%; border-collapse: collapse; margin: 8px 0 12px; font-size: .95rem; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--line); }
+    th { color: var(--muted); font-weight: 600; }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Sticky Blast Privacy Policy</h1>
+    <p>Effective date: November 12, 2026</p>
+  </header>
+
+  <section>
+    <h2>Who we are</h2>
+    <p>Sticky Blast (Android package <code>com.stickyblast.app</code>) is a party game with online rooms, published by SIR ("we", "us"). This policy explains what information the app handles, why, who can see it, and the choices you have. Contact: <a href="mailto:sirgame1591@gmail.com">sirgame1591@gmail.com</a>.</p>
+    <p>The game itself is bundled inside the app and runs on your device. You do not create an account and we never ask for your name, email address or phone number.</p>
+  </section>
+
+  <section>
+    <h2>Information stored only on your device</h2>
+    <p>The game saves your coins, which mini-games you have unlocked, how many rounds you have played, and your sound and language settings in the app's local storage (inside the app's WebView). The app also keeps its anonymous sign-in (see below) in its own storage. This data stays on your device until you clear the app's storage or uninstall the app. There is no cloud backup of your game progress.</p>
+  </section>
+
+  <section>
+    <h2>Online rooms and multiplayer</h2>
+    <p>Online play uses Google <strong>Firebase Authentication</strong> and <strong>Firebase Realtime Database</strong>, which Google operates for us as a service provider.</p>
+    <ul>
+      <li><strong>Anonymous player ID and player code.</strong> On first launch the app signs in anonymously. Firebase creates a random user ID, and the app reserves a random 6-character player code (for example <code>K7M2QX</code>) that is your room code. We store the user ID, the code and the time it was created.</li>
+      <li><strong>Rooms.</strong> When you open or join a room, the room record holds the player codes and user IDs of the people in it, their slot and colour, who is host, the chosen mini-game, the bot setting and timestamps. While you are in a room, the app regularly updates a "last seen" time so the room knows you are still connected; it is removed when you leave or disconnect.</li>
+      <li><strong>Matches.</strong> During an online round, the game sends its own messages through the database to the other players: player positions and moves, scores, eliminations and round results. These messages are deleted when the room starts its next round, goes back to the game list, or closes.</li>
+      <li><strong>Who can see it.</strong> Other players in the same room see your player code, your colour and what your character does in the game. There is no chat, no profile and no way to send text, photos or voice to other players. Room data is protected by database security rules, so only signed-in players of the app can read rooms and only room members can read a room's match data.</li>
+    </ul>
+    <p>Firebase processes technical information such as your IP address and device and app details to provide and secure the service. See <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a>. Firebase servers may be located outside your country.</p>
+    <p>Playing alone with bots works without an internet connection. Without a connection, nothing is sent to Firebase.</p>
+  </section>
+
+  <section>
+    <h2>Advertising</h2>
+    <p>The app shows ads through <strong>Google AdMob</strong>: a full-screen ad when a round ends, and optional rewarded video ads that you can choose to watch for an in-game benefit (opening a locked mini-game right away, or tripling the coins of a round). When ads are requested or shown, Google's Mobile Ads SDK automatically collects and shares data with Google, as Google describes in its <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">data disclosure</a>:</p>
+    <table>
+      <thead><tr><th>Data</th><th>Examples</th><th>Purposes</th></tr></thead>
+      <tbody>
+        <tr><td>Device and other identifiers</td><td>Android advertising ID, app set ID</td><td>Advertising, analytics, fraud prevention</td></tr>
+        <tr><td>Approximate location</td><td>Derived from IP address</td><td>Advertising, fraud prevention</td></tr>
+        <tr><td>App activity</td><td>Ad views, taps and other ad interactions</td><td>Advertising, analytics</td></tr>
+        <tr><td>Diagnostics</td><td>Crash logs, performance and SDK error information</td><td>Analytics, fraud prevention</td></tr>
+      </tbody>
+    </table>
+    <p>This data is sent over encrypted connections. Google and its advertising partners may use it to show ads, measure them, limit how often you see the same ad, and detect fraud and abuse. Depending on your choices and where you live, ads may be personalised or non-personalised. The app requests ads suitable for teens (content rating up to T) and does not mark you as a child. Learn more in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">How Google uses information from sites or apps that use its services</a>.</p>
+    <p>The game does not send your player code, rooms or game data to the ads SDK.</p>
+  </section>
+
+  <section>
+    <h2>Consent and your choices</h2>
+    <ul>
+      <li><strong>Consent message.</strong> Where required (for example in the EEA, the UK and Switzerland), the app shows Google's consent message before ads are requested. If you do not allow ads to be requested, the app does not load them and the game keeps working.</li>
+      <li><strong>Change your choice.</strong> Clear the app's storage (Android Settings &rarr; Apps &rarr; Sticky Blast &rarr; Storage &rarr; Clear storage) and open the app again to see the consent message again. Note that this also resets your game progress and gives you a new player code.</li>
+      <li><strong>Advertising ID.</strong> You can reset or delete your advertising ID in Android Settings &rarr; Privacy &rarr; Ads (the exact path varies by device).</li>
+      <li><strong>Rewarded videos are optional.</strong> You can play every mini-game without watching them; locked mini-games also open by playing rounds.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Deleting your data</h2>
+    <ul>
+      <li><strong>On your device:</strong> Android Settings &rarr; Apps &rarr; Sticky Blast &rarr; Storage &rarr; Clear storage, or uninstall the app.</li>
+      <li><strong>Online data:</strong> email <a href="mailto:sirgame1591@gmail.com?subject=Sticky%20Blast%20data%20deletion">sirgame1591@gmail.com</a> with your player code (shown at the top right of your room as <em>ROOM: &hellip;</em>). We delete your user ID, player code and your room record within 30 days and confirm by email. After that, the app creates a new ID and code the next time it starts.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What we do not do</h2>
+    <p>The app has no chat and no user-generated content such as text, photos or voice. It does not ask for access to your contacts, camera, microphone, photos, files or precise location. We do not sell personal information, and we do not use your player code or game data for advertising.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>Sticky Blast is intended for users aged 13 and older and is not directed at children. We do not knowingly collect personal information from children. If you believe a child has used the app, contact us and we will delete the related online data; the device's advertising ID can also be reset.</p>
+  </section>
+
+  <section>
+    <h2>Data retention and security</h2>
+    <ul>
+      <li>Game progress and settings stay on your device until you clear them.</li>
+      <li>Your anonymous user ID and player code are kept while you use the app, until you ask us to delete them.</li>
+      <li>A room record keeps the player codes and user IDs of its last players until its owner opens or closes the room again. Presence ("last seen") entries are removed when you leave. Match messages are deleted as described above.</li>
+      <li>Data collected by Google for ads is kept according to <a href="https://policies.google.com/technologies/retention">Google's retention policy</a>.</li>
+    </ul>
+    <p>The app talks to Firebase and to Google's ad and consent services over encrypted connections. Game files are served to the in-app WebView from inside the app and are not downloaded from the internet.</p>
+  </section>
+
+  <section>
+    <h2>Third-party services</h2>
+    <ul>
+      <li>Firebase Authentication and Firebase Realtime Database (Google LLC) &ndash; anonymous sign-in, rooms and online matches.</li>
+      <li>Google Mobile Ads SDK (AdMob) and Google User Messaging Platform &ndash; advertising and consent.</li>
+      <li>GitHub Pages hosts this page. GitHub may log standard request data when you visit it. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>We will update this page if the app's features, advertising or data practices change, and change the effective date above. Significant changes will also be noted in the app's release notes on Google Play.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions or requests about privacy: <a href="mailto:sirgame1591@gmail.com">sirgame1591@gmail.com</a>.</p>
+    <p class="muted">Publisher: SIR &middot; App: Sticky Blast &middot; Package: com.stickyblast.app</p>
+  </section>
+</main>
+</body>
+</html>
