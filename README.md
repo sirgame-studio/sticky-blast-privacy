@@ -1,6 +1,6 @@
-# Sticky Blast – Privacy Policy site
+# Stickman Blast Party – Privacy Policy site
 
-Static privacy policy for the Sticky Blast Android app, published with GitHub Pages at:
+Static privacy policy for the Stickman Blast Party Android app, published with GitHub Pages at:
 
 **https://sirgame-studio.github.io/sticky-blast-privacy/**
 
@@ -14,8 +14,8 @@ copied into a checkout of the Pages repository to publish.
 ```sh
 # one-time (already done): create the repo from a copy of this folder and enable Pages
 rm -rf /tmp/sticky-blast-privacy && cp -R privacy-site /tmp/sticky-blast-privacy && cd /tmp/sticky-blast-privacy
-git init -b main && git add . && git commit -m "Sticky Blast privacy policy"
-gh repo create sirgame-studio/sticky-blast-privacy --public --source . --push --description "Privacy policy for the Sticky Blast Android game"
+git init -b main && git add . && git commit -m "Stickman Blast Party privacy policy"
+gh repo create sirgame-studio/sticky-blast-privacy --public --source . --push --description "Privacy policy for the Stickman Blast Party Android game"
 gh api -X POST repos/sirgame-studio/sticky-blast-privacy/pages -f "build_type=legacy" -f "source[branch]=main" -f "source[path]=/"
 
 # later updates
