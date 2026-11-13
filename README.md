@@ -38,4 +38,4 @@ Update this page and the effective date whenever any of these change:
 - What the app stores in Firebase (`docs/rtdb-structure.md`) or how long it keeps it.
 - Ad formats or mediation partners.
 - The Google Play Data safety answers (`store-assets/android/listing.md`).
-- The package name (currently `com.stickyblast.app`) or the target audience (13+, not directed at children).
+- The package name (currently `com.sir.stickmanblastparty`) or the target audience (13+, not directed at children).
